@@ -78,9 +78,11 @@ button {
   font-weight: var(--fw-bold);
 }
 
-button:hover {
+button:hover,
+button:focus {
   background-image: linear-gradient(to right, var(--clr-accent-500), var(--clr-accent-400));
   box-shadow: var(--clr-accent-400) 0px 4px 20px;
+  outline: none;
 }
 
 /* ========== UTILITIES ========== */
