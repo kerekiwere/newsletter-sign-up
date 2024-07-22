@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <main class="main container">
+    <!-- Sign-up form start -->
+    <div class="newsletter" id="signup">
+      <picture class="newsletter__picture">
+        <source srcset="assets/images/illustration-sign-up-desktop.svg" media="(min-width: 768px)">
+        <img src="assets/images/illustration-sign-up-mobile.svg" alt="">
+      </picture>
+
+      <div class="newsletter__content">
+        <h2>Stay updated!</h2>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="newsletter__list">
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <form class="newsletter__form" id="form" novalidate>
+          <div class="newsletter__form-group">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="email@company.com" />
+            <span aria-live="polite" id="email-error" class="newsletter__form-error"></span>
+          </div>
+          <button id="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+    </div>
+    <!-- Sign-up form end -->
+    <!-- Success message start -->
+    <div class="newsletter d-none" id="success">
+      <div class="newsletter__success">
+        <img src="assets/images/icon-success.svg" alt="">
+        <h2>Thanks for subscribing!</h2>
+        <p>A confirmation email has been sent to <strong id="email-success"></strong>.
+          Please open it and click the button inside to confirm your subscription.
+        </p>
+        <button id="dismiss">Dismiss message</button>
+      </div>
+    </div>
+    <!-- Success message end -->
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
